@@ -1,0 +1,109 @@
+-- component wrapper:
+string title: 
+string subtitle:
+ftd.image-src bg-image:
+
+;; Component Column
+-- ftd.column:
+id: hero
+width: fill-container
+height: fill-container
+
+-- ftd.desktop:
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+overflow: hidden
+
+-- ftd.image: $wrapper.bg-image 
+height: hug-content
+width: hug-content
+overflow: hidden
+z-index: 1
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+anchor.id: hero
+z-index: 2
+padding-vertical.px: 100
+padding-horizontal.px: 50
+spacing.fixed.px: 50
+
+;; Hero Heading
+-- ftd.text: $wrapper.title
+color: white
+text-align: center
+width: fill-container
+role: $inherited.types.heading-hero
+
+;; Subtitle
+-- ftd.text: $wrapper.subtitle
+color: white
+text-align: center
+width: fill-container
+role: $inherited.types.heading-small
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.desktop
+
+;;---------------------------------------------------------------------
+;;-------------------End of Desktop Mode-------------------------
+;;---------------------------------------------------------------------
+
+;;---------------------------------------------------------------------
+;;-------------------Start of Mobile Mode-------------------------
+;;---------------------------------------------------------------------
+
+-- ftd.mobile:
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+overflow: hidden
+
+-- ftd.image: $wrapper.bg-image 
+height: fill-container
+width: fill-container
+overflow: hidden
+z-index: 1
+
+-- ftd.column:
+width: hug-content
+height: hug-content
+anchor.id: hero
+z-index: 2
+padding-vertical.px: 20
+padding-horizontal.px: 5
+spacing.fixed.px: 5
+
+
+;; Hero Heading
+-- ftd.text: $wrapper.title
+color: white
+text-align: center
+height: hug-content
+width: hug-content
+role: $inherited.types.heading-large
+
+;; Subtitle
+-- ftd.text: $wrapper.subtitle
+color: white
+text-align: center
+width: hug-content
+height: hug-content
+role: $inherited.types.heading-small
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+;; END OF COMPONENT COLUMN
+-- end: wrapper

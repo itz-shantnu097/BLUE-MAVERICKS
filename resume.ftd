@@ -1,0 +1,46 @@
+-- import: itz-shantnu097.github.io/challenge-07/ui-components/resumepage
+;;---------------------------------------------------------------------
+;;-------------------------Start of Resume page-------------------------
+;;---------------------------------------------------------------------
+
+-- ftd.column:
+id: resume-page
+height: hug-content
+width: fill-container
+background.solid: #221A37
+
+-- navbar.wrapper:
+logo-name: Zoro
+logo-link: /index/
+navlink-1: About
+link-1: /about/
+navlink-2: Certificate
+link-2: /certificate/
+navlink-3: Gallery
+link-3: /gallery/
+navlink-4: Resume
+link-4: /resume/
+navlink-5: Contact
+link-5: /contact/
+theme: dark
+
+-- resumepage.wrapper:
+bg-image: $assets.files.images.Image.png
+year1: JUL 2022 - PRESENT
+company1: Sounds Good Agency
+role1: Lead Developer
+content1: - Shopify Expert with specialization in UI/UX - Proficient in creating wireframes and prototypes using Figma - Expertise in theme customization, feature creation, and design implementation - Lead DEV responsibilities including: -- Git management -- Code review -- Mentoring team members -- Bug tracking -- Project management
+content2: - Developed and maintained Shopify projects for Toptal, a network of top 3% software engineering, design, and finance talent - Specialized in design to UI implementation using Figma - Managed bug tickets using Asana.com - Integrated 3rd party apps and Shopify API end-points - Developed new features and components, complex customizer configurations, meta fields, and templates using ThemeKit
+year2: JUN 2018 - PRESENT
+company2: Toptal
+role2: UI/UX Expert
+
+
+-- footer.wrapper:
+copywrite: copyright @2023 ZORO
+
+-- end: ftd.column
+
+;;---------------------------------------------------------------------
+;;-------------------End of Resume page-------------------------
+;;---------------------------------------------------------------------

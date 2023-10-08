@@ -1,0 +1,45 @@
+-- import: itz-shantnu097.github.io/challenge-07/ui-components/aboutpage
+;;---------------------------------------------------------------------
+;;-------------------------Start of About page-------------------------
+;;---------------------------------------------------------------------
+
+-- ftd.column:
+id: about-page
+height: hug-content
+width: fill-container
+background.solid: #221A37
+
+-- navbar.wrapper:
+logo-name: Zoro
+logo-link: /index/
+navlink-1: About
+link-1: /about/
+navlink-2: Certificate
+link-2: /certificate/
+navlink-3: Gallery
+link-3: /gallery/
+navlink-4: Resume
+link-4: /resume/
+navlink-5: Contact
+link-5: /contact/
+theme: dark
+
+-- aboutpage.wrapper: Cheif
+label: AI-UI Architect
+position: Design & Development
+bg-image: $assets.files.images.Image.png
+
+An AI wizard, possesses a keen intellect and a natural affinity for technology. Constantly seeking out new ways to merge artificial intelligence with user interface design, they are a true innovator in their field.
+
+Leading a team of skilled designers and developers, they use their powers for good, striving to make the world a better place through exceptional user experiences. Whether it's crafting beautiful apps or designing seamless websites, no challenge is too great for them to tackle.
+
+With a deep understanding of the mystical arts of tech and design, always on the cutting-edge, seeking out new ways to improve and evolve. Join them on their journey to make a lasting impact on the world, one user at a time.
+
+-- footer.wrapper:
+copywrite: copyright @2023 ZORO
+
+-- end: ftd.column
+
+;;---------------------------------------------------------------------
+;;-------------------End of About page-------------------------
+;;---------------------------------------------------------------------

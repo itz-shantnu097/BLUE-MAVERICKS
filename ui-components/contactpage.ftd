@@ -1,0 +1,320 @@
+-- component wrapper:
+boolean $is-hover: false
+ftd.image-src bg-image:
+
+-- ftd.column:
+id: contact
+width: fill-container
+height: fill-container
+
+-- ftd.desktop:
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+overflow: hidden
+
+-- ftd.image: $wrapper.bg-image 
+height: hug-content
+width: hug-content
+overflow: hidden
+z-index: 1
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+anchor.id: hero
+z-index: 2
+padding-vertical.px: 100
+padding-horizontal.px: 50
+spacing.fixed.px: 50
+
+-- ftd.container:
+padding.px: 10
+background.solid: #d4c0d9
+border-radius.px: 10
+margin-left.px: 800
+
+-- ftd.column:
+
+-- ftd.text: Name
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-top.px: 10
+
+-- ftd.text-input:
+placeholder: Enter your full name
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-width.px: 1
+border-radius.px: 5
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+margin-top.px: 10
+background.solid: #e9e9e9
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: City
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-top.px: 10
+
+-- ftd.text-input:
+placeholder: Enter your city
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-width.px: 1
+border-radius.px: 5
+background.solid: #e9e9e9
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+margin-top.px: 10
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: Education
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-top.px: 10
+
+-- ftd.text-input:
+placeholder: Enter your education details
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-width.px: 1
+border-radius.px: 5
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+background.solid: #e9e9e9
+margin-top.px: 10
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: Job Profile
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-top.px: 10
+
+-- ftd.text-input:
+placeholder: Enter job profile
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-top.px: 10
+background.solid: #e9e9e9
+width.fixed.px: 332
+border-width.px: 1
+border-radius.px: 5
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: Phone Number
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-top.px: 10
+
+-- ftd.text-input:
+placeholder: Enter your phone number
+margin-top.px: 10
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-width.px: 1
+border-radius.px: 5
+background.solid: #e9e9e9
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: Submit
+role: $inherited.types.label-large
+margin-left.px: 240
+margin-top.px: 10
+text-align: center
+border-radius.px: 5
+padding-vertical.px: 8
+padding-horizontal.px: 24
+background.solid: #402166
+background.solid if { wrapper.is-hover }: 	#a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover, v = false)
+color: white
+link: https://www.submit.com
+
+-- end: ftd.column
+
+-- end: ftd.container
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.desktop
+
+;;---------------------------------------------------------------------
+;;-------------------End of Desktop Mode-------------------------
+;;---------------------------------------------------------------------
+
+;;---------------------------------------------------------------------
+;;-------------------Start of Mobile Mode-------------------------
+;;---------------------------------------------------------------------
+
+
+-- ftd.mobile:
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+overflow: hidden
+
+-- ftd.image: $wrapper.bg-image 
+height: fill-container
+width: fill-container
+overflow: hidden
+z-index: 1
+
+-- ftd.column:
+width: hug-content
+height: hug-content
+anchor.id: hero
+z-index: 2
+padding-vertical.px: 20
+padding-horizontal.px: 80
+spacing.fixed.px: 5
+
+-- ftd.container:
+padding.px: 10
+background.solid: #d4c0d9
+margin-left.px: 80
+border-radius.px: 10
+-- ftd.column:
+
+-- ftd.text: Name
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-top.px: 10
+
+-- ftd.text-input:
+placeholder: Enter your full name
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-width.px: 1
+border-radius.px: 5
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+margin-top.px: 10
+background.solid: #e9e9e9
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: City
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-top.px: 10
+
+-- ftd.text-input:
+placeholder: Enter your city
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-width.px: 1
+border-radius.px: 5
+background.solid: #e9e9e9
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+margin-top.px: 10
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: Education
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-top.px: 10
+
+-- ftd.text-input:
+placeholder: Enter your education details
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-width.px: 1
+border-radius.px: 5
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+background.solid: #e9e9e9
+margin-top.px: 10
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: Job Profile
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-top.px: 10
+
+-- ftd.text-input:
+placeholder: Enter job profile
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-top.px: 10
+background.solid: #e9e9e9
+width.fixed.px: 332
+border-width.px: 1
+border-radius.px: 5
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: Phone Number
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-top.px: 10
+
+-- ftd.text-input:
+placeholder: Enter your phone number
+margin-top.px: 10
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-width.px: 1
+border-radius.px: 5
+background.solid: #e9e9e9
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: Submit
+role: $inherited.types.label-large
+margin-left.px: 240
+margin-top.px: 10
+text-align: center
+border-radius.px: 5
+padding-vertical.px: 8
+padding-horizontal.px: 24
+background.solid: #402166
+background.solid if { wrapper.is-hover }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover, v = false)
+color: white
+link: https://www.submit.com
+
+-- end: ftd.column
+
+-- end: ftd.container
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: wrapper

@@ -1,0 +1,249 @@
+;;---------------------------------------------------------------------
+;;-------------------Start of Resume Page-------------------------
+;;---------------------------------------------------------------------
+
+-- component wrapper:
+string role1:
+string year1:
+string company1:
+string content1:
+string role2:
+string year2:
+string company2:
+string content2:
+ftd.image-src bg-image:
+
+-- ftd.column:
+id: resume
+width: fill-container
+height: fill-container
+
+;;---------------------------------------------------------------------
+;;-------------------Start of Desktop Mode-------------------------
+;;---------------------------------------------------------------------
+
+-- ftd.desktop:
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+overflow: hidden
+
+-- ftd.image: $wrapper.bg-image 
+height: hug-content
+width: hug-content
+overflow: hidden
+z-index: 1
+
+-- ftd.column:
+width: hug-content
+height: fill-container
+anchor.id: hero
+z-index: 2
+padding-vertical.px: 100
+padding-horizontal.px: 50
+spacing.fixed.px: 50
+margin-left.px: 750
+
+-- ftd.row:
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.year1
+color: 	#d4c0d9
+region: h3
+align-self: center
+padding-bottom.px: 10
+padding-top.px: 10
+
+-- ftd.text: $wrapper.company1
+color: 	#a982b4
+region: h4 
+
+-- end: ftd.column
+
+-- ftd.image: $assets.files.assets.Line.png
+width.fixed.percent: 10
+height.fixed.px: 250
+padding-top.px: 10
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.role1
+padding-bottom.px: 10
+color: white
+region: h1
+padding-top.px: 10
+
+-- ftd.text: $wrapper.content1
+color: #DDA0DD
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.row:
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.year2
+color: 	#d4c0d9
+region: h3
+align-self: center
+padding-bottom.px: 10
+padding-top.px: 10
+
+-- ftd.text: $wrapper.company2
+color: 	#a982b4
+region: h4 
+
+-- end: ftd.column
+
+-- ftd.image: $assets.files.assets.Line.png
+width.fixed.percent: 10
+height.fixed.px: 250
+padding-top.px: 10
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.role2
+padding-bottom.px: 10
+color: white
+region: h1
+padding-top.px: 10
+
+-- ftd.text: $wrapper.content2
+color: #DDA0DD
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.desktop
+
+;;---------------------------------------------------------------------
+;;-------------------End of Desktop Mode-------------------------
+;;---------------------------------------------------------------------
+
+;;---------------------------------------------------------------------
+;;-------------------Start of Mobile Mode-------------------------
+;;---------------------------------------------------------------------
+
+-- ftd.mobile:
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+overflow: hidden
+
+-- ftd.image: $wrapper.bg-image 
+height: fill-container
+width: fill-container
+overflow: hidden
+z-index: 1
+
+-- ftd.column:
+width: hug-content
+height: hug-content
+anchor.id: hero
+z-index: 2
+padding-vertical.px: 20
+padding-horizontal.px: 80
+spacing.fixed.px: 5
+padding.px: 10
+
+-- ftd.row:
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.year1
+color: 	#d4c0d9
+region: h3
+align-self: center
+padding-bottom.px: 10
+padding-top.px: 10
+
+-- ftd.text: $wrapper.company1
+color: 	#a982b4
+region: h4 
+
+-- end: ftd.column
+
+-- ftd.image: $assets.files.assets.Line.png
+width.fixed.percent: 10
+height.fixed.px: 250
+padding-top.px: 10
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.role1
+padding-bottom.px: 10
+color: white
+region: h1
+padding-top.px: 10
+
+-- ftd.text: $wrapper.content1
+color: #DDA0DD
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.row:
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.year2
+color: 	#d4c0d9
+region: h3
+align-self: center
+padding-bottom.px: 10
+padding-top.px: 10
+
+-- ftd.text: $wrapper.company2
+color: 	#a982b4
+region: h4 
+
+-- end: ftd.column
+
+-- ftd.image: $assets.files.assets.Line.png
+width.fixed.percent: 10
+height.fixed.px: 250
+padding-top.px: 10
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.role2
+padding-bottom.px: 10
+color: white
+region: h1
+padding-top.px: 10
+
+-- ftd.text: $wrapper.content2
+color: #DDA0DD
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+;;---------------------------------------------------------------------
+;;-------------------End of Mobile Mode-------------------------
+;;---------------------------------------------------------------------
+
+-- end: ftd.column
+
+-- end: wrapper
+
+;;---------------------------------------------------------------------
+;;-------------------End of Resume Page-------------------------
+;;---------------------------------------------------------------------
