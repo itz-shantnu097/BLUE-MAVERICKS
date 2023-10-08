@@ -27,7 +27,7 @@ theme: dark
 -- hero.wrapper:
 bg-image: $assets.files.images.Image.png
 title: Get the latest tech news and insights in minutes
-subtitle: Join 1000+ developers and designers who already read our weekly newsletter.
+subtitle: Join 1000+ developers and designers who already read our weekly newsletter!!
 
 -- footer.wrapper:
 copywrite: copyright @2023 ZORO
