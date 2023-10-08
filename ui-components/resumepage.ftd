@@ -173,7 +173,7 @@ region: h4
 
 -- end: ftd.column
 
--- ftd.image: $assets.files.images.Line.png
+-- ftd.image: $assets.files.assets.Line.png
 width.fixed.percent: 10
 height.fixed.px: 250
 padding-top.px: 10
@@ -210,7 +210,7 @@ region: h4
 
 -- end: ftd.column
 
--- ftd.image: $assets.files.images.Line.png
+-- ftd.image: $assets.files.assets.Line.png
 width.fixed.percent: 10
 height.fixed.px: 250
 padding-top.px: 10
