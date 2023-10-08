@@ -1,0 +1,376 @@
+;;----------------------------------------------------------------------
+;;---------------------------- Start of Navbar----------------------
+;;----------------------------------------------------------------------
+
+-- component wrapper:
+string logo-name:
+string logo-link:
+optional string navlink-1:
+optional string link-1:
+optional string navlink-2:
+optional string link-2:
+optional string navlink-3:
+optional string link-3:
+optional string navlink-4:
+optional string link-4:
+optional string navlink-5:
+optional string link-5:
+optional string navlink-6:
+optional string link-6:
+optional boolean $on-click: false
+optional boolean $is-hover-1: false
+optional boolean $is-hover-2: false
+optional boolean $is-hover-3: false
+optional boolean $is-hover-4: false
+optional boolean $is-hover-5: false
+optional boolean $is-hover-6: false
+optional string theme: light
+
+-- ftd.row:
+height: fill-container
+width: fill-container
+
+;;----------------------------------------------------------------------
+;;---------------------------- Start of Desktop Mode--------------------
+;;----------------------------------------------------------------------
+
+-- ftd.desktop:
+
+-- ftd.row:
+height.fixed.px: 80
+width: fill-container
+padding.px: 40
+spacing.fixed.px: 300
+z-index: 1000
+
+;;---------------------------------------------------------------------
+;;---------------------------- Start of Logo---------------------------
+;;---------------------------------------------------------------------
+-- ftd.text: $wrapper.logo-name
+color if {wrapper.theme == "light"}: #000
+color: #fff
+width: fill-container
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.logo-link
+
+;;----------------------------------------------------------------------
+;;---------------------------- Start of Navbar-links Desktop Mode-------------------
+;;----------------------------------------------------------------------
+-- ftd.row:
+height: fill-container
+spacing.fixed.px: 40
+
+-- ftd.text: $wrapper.navlink-1
+if: {$wrapper.navlink-1 != NULL}
+color if {wrapper.theme == "light"}: #000
+border-radius.px: 5
+padding.px: 5
+text-align: center
+color: #fff
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-1
+background.solid: #402166
+background.solid if { wrapper.is-hover-1 }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover-1, v = false)
+
+-- ftd.text: $wrapper.navlink-2
+if: {$wrapper.navlink-2 != NULL}
+color if {wrapper.theme == "light"}: #000
+border-radius.px: 5
+padding.px: 5
+text-align: center
+color: #fff
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-2
+background.solid: #402166
+background.solid if { wrapper.is-hover-2 }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover-2, v = false)
+
+
+-- ftd.text: $wrapper.navlink-3
+if: {$wrapper.navlink-3 != NULL}
+color if {wrapper.theme == "light"}: #000
+border-radius.px: 5
+padding.px: 5
+text-align: center
+color: #fff
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-3
+background.solid: #402166
+background.solid if { wrapper.is-hover-3 }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover-3, v = false)
+
+-- ftd.text: $wrapper.navlink-4
+if: {$wrapper.navlink-4 != NULL}
+color if {wrapper.theme == "light"}: #000
+border-radius.px: 5
+padding.px: 5
+text-align: center
+color: #fff
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-4
+background.solid: #402166
+background.solid if { wrapper.is-hover-4 }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover-4, v = false)
+
+
+-- ftd.text: $wrapper.navlink-5
+if: {$wrapper.navlink-5 != NULL}
+color if {wrapper.theme == "light"}: #000
+border-radius.px: 5
+padding.px: 5
+text-align: center
+color: #fff
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-5
+background.solid: #402166
+background.solid if { wrapper.is-hover-5 }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover-5, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover-5, v = false)
+
+-- ftd.text: $wrapper.navlink-6
+if: {$wrapper.navlink-6 != NULL}
+color if {wrapper.theme == "light"}: #000
+border-radius.px: 5
+padding.px: 5
+text-align: center
+color: #fff
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-6
+background.solid: #402166
+background.solid if { wrapper.is-hover-6 }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover-6, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover-6, v = false)
+
+-- end: ftd.row
+;;----------------------------------------------------------------------
+;;---------------------------- End of Navbar-links Desktop Mode----------------------
+;;----------------------------------------------------------------------
+
+
+-- end: ftd.row
+
+-- end: ftd.desktop
+;;----------------------------------------------------------------------
+;;---------------------------- End of Desktop Mode----------------------
+;;----------------------------------------------------------------------
+
+
+;;----------------------------------------------------------------------
+;;---------------------------- Start of Mobile Mode----------------------
+;;----------------------------------------------------------------------
+
+-- ftd.mobile:
+
+-- ftd.row:
+id: nav-mobile
+height.fixed.px: 80
+width: fill-container
+padding.px: 40
+spacing.fixed.px: 300
+
+;;----------------------------------------------------------------------
+;;---------------------------- Start of Hamburger-Menu ----------------------
+;;----------------------------------------------------------------------
+
+-- ftd.image:
+src if {wrapper.theme == "light"}: $assets.files.assets.black-hamburger.svg
+src: $assets.files.assets.white-hamburger.svg
+height.fixed.px: 40
+width.fixed.px: 40
+cursor: pointer
+anchor.id: nav-mobile
+top.px: 40
+left.px: 25
+$on-click$: $ftd.toggle($a = $wrapper.on-click)
+
+;;----------------------------------------------------------------------
+;;---------------------------- Start of Logo ----------------------
+;;----------------------------------------------------------------------
+
+-- ftd.text: $wrapper.logo-name
+color if {wrapper.theme == "light"}: #000
+color: #fff
+cursor: pointer
+text-align: center
+width: fill-container
+role: $inherited.types.heading-small
+link: $wrapper.logo-link
+
+;;----------------------------------------------------------------------
+;;---------------------------- Start of Navbar-links----------------------
+;;----------------------------------------------------------------------
+
+-- ftd.column:
+id: navlinks-mobile
+height.fixed.vh: 100
+width: fill-container
+background.solid if {wrapper.theme == "light"}: #fff
+background.solid: #000
+spacing.fixed.px: 40
+padding.px: 40
+anchor: window
+top.px: 0
+left.px: 0
+z-index: 9999
+if: {$wrapper.on-click}
+
+;;----------------------------------------------------------------------
+;;---------------------------- Start of Hamburger-Button----------------------
+;;----------------------------------------------------------------------
+
+-- ftd.row:
+width: fill-container
+
+;;----------------------------------------------------------------------
+;;---------------------------- Close of Hamburger-Button----------------------
+;;----------------------------------------------------------------------
+
+-- ftd.image:
+anchor.id: navlinks-mobile
+top.px: 40
+right.px: 40
+src if {wrapper.theme == "light"}: $assets.files.assets.black-cross.svg
+src: $assets.files.assets.white-cross.svg
+height.fixed.px: 40
+width.fixed.px: 40
+cursor: pointer
+$on-click$: $ftd.toggle($a = $wrapper.on-click)
+
+-- end: ftd.row
+
+;;----------------------------------------------------------------------
+;;---------------------------- End of Hamburger-Button ----------------------
+;;----------------------------------------------------------------------
+
+;;----------------------------------------------------------------------
+;;---------------------------- Start of Navbar-links Mobile Mode----------------------
+;;----------------------------------------------------------------------
+
+-- ftd.text: $wrapper.navlink-1
+if: {$wrapper.navlink-1 != NULL}
+color if {wrapper.theme == "light"}: #000
+width: fill-container
+border-radius.px: 5
+padding.px: 10
+text-align: center
+color: #fff
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-1
+background.solid: #402166
+background.solid if { wrapper.is-hover-1 }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover-1, v = false)
+
+-- ftd.text: $wrapper.navlink-2
+if: {$wrapper.navlink-2 != NULL}
+color if {wrapper.theme == "light"}: #000
+width: fill-container
+border-radius.px: 5
+padding.px: 10
+text-align: center
+color: #fff
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-2
+background.solid: #402166
+background.solid if { wrapper.is-hover-2 }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover-2, v = false)
+
+-- ftd.text: $wrapper.navlink-3
+if: {$wrapper.navlink-3 != NULL}
+color if {wrapper.theme == "light"}: #000
+width: fill-container
+border-radius.px: 5
+padding.px: 10
+text-align: center
+color: #fff
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-3
+background.solid: #402166
+background.solid if { wrapper.is-hover-3 }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover-3, v = false)
+
+-- ftd.text: $wrapper.navlink-4
+if: {$wrapper.navlink-4 != NULL}
+color if {wrapper.theme == "light"}: #000
+width: fill-container
+border-radius.px: 5
+padding.px: 10
+text-align: center
+color: #fff
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-4
+background.solid: #402166
+background.solid if { wrapper.is-hover-4 }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover-4, v = false)
+
+-- ftd.text: $wrapper.navlink-5
+if: {$wrapper.navlink-5 != NULL}
+color if {wrapper.theme == "light"}: #000
+width: fill-container
+border-radius.px: 5
+padding.px: 10
+text-align: center
+color: #fff
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-5
+background.solid: #402166
+background.solid if { wrapper.is-hover-5 }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover-5, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover-5, v = false)
+
+-- ftd.text: $wrapper.navlink-6
+if: {$wrapper.navlink-6 != NULL}
+color if {wrapper.theme == "light"}: #000
+width: fill-container
+border-radius.px: 5
+padding.px: 10
+text-align: center
+color: #fff
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-6
+background.solid: #402166
+background.solid if { wrapper.is-hover-6 }: #a982b4
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.is-hover-6, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.is-hover-6, v = false)
+
+-- end: ftd.column
+;;----------------------------------------------------------------------
+;;---------------------------- End of Navbar-links Mobile Mode----------------------
+;;----------------------------------------------------------------------
+
+-- end: ftd.row
+
+-- end: ftd.mobile
+
+;;----------------------------------------------------------------------
+;;---------------------------- End of Mobile Mode----------------------
+;;----------------------------------------------------------------------
+
+-- end: ftd.row
+
+-- end: wrapper
+
+;;----------------------------------------------------------------------
+;;----------------------------End of Navbar----------------------
+;;----------------------------------------------------------------------
