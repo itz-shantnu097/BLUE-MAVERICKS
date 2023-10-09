@@ -1,6 +1,6 @@
 -- import: itz-shantnu097.github.io/challenge-07/ui-components/hero
 -- import: itz-shantnu097.github.io/challenge-07/about
--- import: itz-shantnu097.github.io/challenge-07/ui-components/certificate 
+-- import: itz-shantnu097.github.io/challenge-07/certificate 
 ;;---------------------------------------------------------------------
 ;;-------------------Start of Index page-------------------------
 ;;---------------------------------------------------------------------
@@ -12,7 +12,7 @@ background.solid: #221A37
 
 -- navbar.wrapper:
 logo-name: Zoro
-logo-link: https://itz-shantnu097.github.io/challenge-07/index.ftd
+logo-link: /#/
 navlink-1: About
 link-1: /challenge-07/about.ftd
 navlink-2: Certificate
