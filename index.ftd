@@ -17,15 +17,15 @@ background.solid: #221A37
 logo-name: Zoro
 logo-link: https://www.fastn.com
 navlink-1: About
-link-1: /Challenge-07/about/
+link-1: Challenge-07/about/
 navlink-2: Certificate
-link-2: /Challenge-07/certificate/
+link-2: Challenge-07/certificate/
 navlink-3: Gallery
-link-3: /Challenge-07/gallery/
+link-3: Challenge-07/gallery/
 navlink-4: Resume
-link-4: /Challenge-07/resume/
+link-4: Challenge-07/resume/
 navlink-5: Contact
-link-5: /Challenge-07/contact/
+link-5: Challenge-07/contact/
 theme: dark
 
 -- hero.wrapper:
