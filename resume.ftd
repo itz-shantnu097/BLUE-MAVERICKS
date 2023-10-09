@@ -1,4 +1,9 @@
 -- import: itz-shantnu097.github.io/Challenge-07/ui-components/resumepage
+-- import: itz-shantnu097.github.io/Challenge-07/about
+-- import: itz-shantnu097.github.io/Challenge-07/certificate
+-- import: itz-shantnu097.github.io/Challenge-07/gallery
+-- import: itz-shantnu097.github.io/Challenge-07/resume
+-- import: itz-shantnu097.github.io/Challenge-07/contact
 ;;---------------------------------------------------------------------
 ;;-------------------------Start of Resume page-------------------------
 ;;---------------------------------------------------------------------
@@ -13,15 +18,15 @@ background.solid: #221A37
 logo-name: Zoro
 logo-link: https://www.fastn.com
 navlink-1: About
-link-1: /about/
+link-1: /Challenge-07/about/
 navlink-2: Certificate
-link-2: /certificate/
+link-2: /Challenge-07/certificate/
 navlink-3: Gallery
-link-3: /gallery/
+link-3: /Challenge-07/gallery/
 navlink-4: Resume
-link-4: /resume/
+link-4: /Challenge-07/resume/
 navlink-5: Contact
-link-5: /contact/
+link-5: /Challenge-07/contact/
 theme: dark
 
 -- resumepage.wrapper:
