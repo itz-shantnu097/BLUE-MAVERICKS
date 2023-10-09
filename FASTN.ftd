@@ -1,10 +1,10 @@
 -- import: fastn
 
--- fastn.package: itz-shantnu097.github.io/challenge-07
-favicon: /-/itz-shantnu097.github.io/challenge-07/favicon.ico
+-- fastn.package: itz-shantnu097.github.io/Challenge-07
+favicon: /-/itz-shantnu097.github.io/Challenge-07/favicon.ico
 
--- fastn.auto-import: itz-shantnu097.github.io/challenge-07/FASTN/ds
--- fastn.auto-import: itz-shantnu097.github.io/challenge-07/assets
--- fastn.auto-import: itz-shantnu097.github.io/challenge-07/ui-components/navbar
--- fastn.auto-import: itz-shantnu097.github.io/challenge-07/ui-components/footer
--- fastn.auto-import: itz-shantnu097.github.io/challenge-07/ui-components/hero
+-- fastn.auto-import: itz-shantnu097.github.io/Challenge-07/FASTN/ds
+-- fastn.auto-import: itz-shantnu097.github.io/Challenge-07/assets
+-- fastn.auto-import: itz-shantnu097.github.io/Challenge-07/ui-components/navbar
+-- fastn.auto-import: itz-shantnu097.github.io/Challenge-07/ui-components/footer
+-- fastn.auto-import: itz-shantnu097.github.io/Challenge-07/ui-components/hero
