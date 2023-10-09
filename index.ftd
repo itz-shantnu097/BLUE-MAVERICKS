@@ -14,7 +14,7 @@ width: fill-container
 background.solid: #221A37
 
 -- navbar.wrapper:
-logo-name: Zoroo
+logo-name: Zoro
 logo-link: https://www.fastn.com
 navlink-1: About
 link-1: /Challenge-07/about/
