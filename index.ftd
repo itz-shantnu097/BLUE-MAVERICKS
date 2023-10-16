@@ -3,13 +3,13 @@
 ;;-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/sections/features
 ;;-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/sections/faqs
 ;;-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/sections/contact
-
+-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/utils/animation
 
 -- ds.page:
 
 -- hero.wrapper: Hello I'm
 image: $assets.files.assets.profile-img.png
-name: Roronoa Zoroo
+name: Roronoa Zoro
 
 A Professional Freelance Web Designer
 
