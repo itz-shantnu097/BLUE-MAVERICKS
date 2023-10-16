@@ -36,7 +36,7 @@ z-index: -1
 
 -- navbar.wrapper:
 title: Freelancer
-title-link: #hero
+title-link: /BLUE-MAVERICKS
 navlink-1: Home
 link-1: #hero
 navlink-2: About
