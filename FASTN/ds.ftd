@@ -2,7 +2,7 @@
 -- import: itz-shantnu097.github.io/BLUE-MAVERICKS/components/navbar
 -- import: itz-shantnu097.github.io/BLUE-MAVERICKS/components/footer
 -- import: itz-shantnu097.github.io/BLUE-MAVERICKS/utils/animation
-;;-- import: itz-shantnu097.github.io/Oswald-Typography
+-- import: itz-shantnu097.github.io/Oswald-Typography
 
 
 -- component page:
@@ -12,7 +12,7 @@ optional string smooth-scroll: smooth
 optional integer x: $animation.start(overflowX = $page.overflow-x, smoothScroll = $page.smooth-scroll)
 
 -- ftd.column:
-;;types: $Oswald-Typography
+types: $Oswald-Typography
 height: fill-container
 width: fill-container
 background.solid: $inherited.colors.background.base
