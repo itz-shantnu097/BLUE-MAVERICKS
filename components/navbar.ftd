@@ -1,0 +1,251 @@
+
+
+
+-- component wrapper:
+string title:
+string title-link:
+optional string navlink-1:
+optional string link-1:
+optional string navlink-2:
+optional string link-2:
+optional string navlink-3:
+optional string link-3:
+optional string navlink-4:
+optional string link-4:
+optional string navlink-5:
+optional string link-5:
+optional string navlink-6:
+optional string link-6:
+optional boolean $on-click: false
+optional string theme: light
+;;ftd.type-data types: $fastn-quicksand-font.types    
+
+
+-- ftd.row:
+height: fill-container
+width: fill-container
+
+
+-- ftd.desktop:
+
+-- ftd.row:
+height.fixed.px: 80
+width: fill-container
+padding.px: 40
+spacing.fixed.px: 300
+z-index: 1000
+
+;; Title
+-- ftd.text: $wrapper.title
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-medium
+cursor: pointer
+link: $wrapper.title-link
+
+
+;; Navlinks
+-- ftd.row:
+height: fill-container
+spacing.fixed.px: 40
+
+-- ftd.text: $wrapper.navlink-1
+if: {$wrapper.navlink-1 != NULL}
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-1
+
+-- ftd.text: $wrapper.navlink-2
+if: {$wrapper.navlink-2 != NULL}
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-2
+
+-- ftd.text: $wrapper.navlink-3
+if: {$wrapper.navlink-3 != NULL}
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-3
+
+-- ftd.text: $wrapper.navlink-4
+if: {$wrapper.navlink-4 != NULL}
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-4
+
+-- ftd.text: $wrapper.navlink-5
+if: {$wrapper.navlink-5 != NULL}
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-5
+
+-- ftd.text: $wrapper.navlink-6
+if: {$wrapper.navlink-6 != NULL}
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-6
+
+-- end: ftd.row
+;; END OF NAVLINKS
+
+-- end: ftd.row
+
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
+
+-- ftd.row:
+id: mobile-nav
+height.fixed.px: 80
+width: fill-container
+padding.px: 40
+spacing.fixed.px: 300
+z-index: 1000
+
+
+;; Hamburger menu
+-- ftd.image:
+src if {wrapper.theme == "light"}: $assets.files.assets.black-hamburger.svg
+src: $assets.files.assets.white-hamburger.svg
+height.fixed.px: 40
+width.fixed.px: 40
+cursor: pointer
+anchor.id: mobile-nav
+top.px: 40
+left.px: 25
+$on-click$: $ftd.toggle($a = $wrapper.on-click)
+
+;; Title
+-- ftd.text: $wrapper.title
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-medium
+cursor: pointer
+text-align: center
+width: fill-container
+link: $wrapper.title-link
+
+
+;; Navlinks
+-- ftd.column:
+id: mobile-navlinks
+height.fixed.vh: 100
+width: fill-container
+;; background.solid if {wrapper.theme == "light"}: #fff
+;; background.solid: #000
+background.solid: $inherited.colors.background.base
+spacing.fixed.px: 40
+padding.px: 40
+anchor: window
+top.px: 0
+left.px: 0
+z-index: 9999
+if: {$wrapper.on-click}
+
+
+;; Close button Container
+-- ftd.row:
+width: fill-container
+
+
+;; Close button image
+-- ftd.image:
+anchor.id: mobile-navlinks
+top.px: 40
+right.px: 40
+src if {wrapper.theme == "light"}: $assets.files.assets.black-cross.svg
+src: $assets.files.assets.white-cross.svg
+height.fixed.px: 40
+width.fixed.px: 40
+cursor: pointer
+$on-click$: $ftd.toggle($a = $wrapper.on-click)
+
+-- end: ftd.row
+;; END OF CLOSE BUTTON CONTAINER
+
+-- ftd.text: $wrapper.navlink-1
+if: {$wrapper.navlink-1 != NULL}
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-1
+
+-- ftd.text: $wrapper.navlink-2
+if: {$wrapper.navlink-2 != NULL}
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-2
+
+-- ftd.text: $wrapper.navlink-3
+if: {$wrapper.navlink-3 != NULL}
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-3
+
+-- ftd.text: $wrapper.navlink-4
+if: {$wrapper.navlink-4 != NULL}
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-4
+
+-- ftd.text: $wrapper.navlink-5
+if: {$wrapper.navlink-5 != NULL}
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-5
+
+-- ftd.text: $wrapper.navlink-6
+if: {$wrapper.navlink-6 != NULL}
+;; color if {wrapper.theme == "light"}: #000
+;; color: #fff
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+cursor: pointer
+link: $wrapper.link-6
+
+-- end: ftd.column
+;; END OF NAVLINKS
+
+-- end: ftd.row
+
+-- end: ftd.mobile
+
+-- end: ftd.row
+
+-- end: wrapper

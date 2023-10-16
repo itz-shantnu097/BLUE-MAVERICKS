@@ -1,9 +1,14 @@
 -- import: fastn
 
--- fastn.package: itz-shantnu097.github.io/Challenge-07
-favicon: /-/itz-shantnu097.github.io/Challenge-07/favicon.ico
+-- fastn.package: itz-shantnu097.github.io/BLUE-MAVERICKS
+favicon: /-/itz-shantnu097.github.io/BLUE-MAVERICKS/favicon.ico
 
--- fastn.auto-import: itz-shantnu097.github.io/Challenge-07/FASTN/ds
--- fastn.auto-import: itz-shantnu097.github.io/Challenge-07/assets
--- fastn.auto-import: itz-shantnu097.github.io/Challenge-07/ui-components/navbar
--- fastn.auto-import: itz-shantnu097.github.io/Challenge-07/ui-components/footer
+;;-- fastn.dependency: itz-shantnu097.github.io/Oswald-Typography
+
+-- fastn.dependency: fastn-community.github.io/dark-mode-switcher
+
+-- fastn.auto-import: itz-shantnu097.github.io/BLUE-MAVERICKS/assets
+-- fastn.auto-import: itz-shantnu097.github.io/BLUE-MAVERICKS/components/navbar
+-- fastn.auto-import: itz-shantnu097.github.io/BLUE-MAVERICKS/components/footer
+-- fastn.auto-import: itz-shantnu097.github.io/BLUE-MAVERICKS/FASTN/ds
+

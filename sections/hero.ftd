@@ -1,0 +1,110 @@
+
+
+
+-- component wrapper:
+caption title:
+string name:
+optional body subtitle:
+ftd.image-src image:
+
+-- ftd.container:
+id: hero
+height: fill-container
+width: fill-container
+
+-- ftd.desktop:
+
+-- ftd.row:
+height.fixed.vh: 100
+width: fill-container
+margin-top.px: -50
+padding-vertical.px: 0
+padding-horizontal.px: 80
+;; background.solid: #f3f4fd
+spacing: space-between
+align-content: center
+
+
+-- ftd.column:
+width.fixed.px: 600
+classes: wow, fadeInUp
+
+-- ftd.text: $wrapper.title
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+margin-bottom.px: 5
+
+-- ftd.text: $wrapper.name
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+margin-bottom.px: 20
+
+-- ftd.text: $wrapper.subtitle
+if: { $wrapper.subtitle != NULL }
+role: $inherited.types.heading-large
+color: #6c6f8a
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $wrapper.image
+height: hug-content
+width: hug-content
+classes: wow, fadeInRight
+
+-- end: ftd.row
+
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+margin-vertical.px: 60
+padding-vertical.px: 10
+padding-horizontal.px: 20
+;; background.solid: #f3f4fd
+spacing.fixed.px: 40
+align-content: center
+
+
+-- ftd.column:
+;; width.fixed.px: 300
+classes: wow, fadeInUp
+
+
+-- ftd.text: $wrapper.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+margin-bottom.px: 5
+
+-- ftd.text: $wrapper.name
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+margin-bottom.px: 20
+
+-- ftd.text: $wrapper.subtitle
+if: { $wrapper.subtitle != NULL }
+role: $inherited.types.copy-regular
+color: #6c6f8a
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $wrapper.image
+height.fixed.px: 420
+width.fixed.px: 230
+classes: wow, fadeInRight
+
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+
+-- end: ftd.container
+
+-- end: wrapper
