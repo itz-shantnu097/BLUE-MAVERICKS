@@ -3,10 +3,11 @@
 -- fastn.package: itz-shantnu097.github.io/BLUE-MAVERICKS
 favicon: /-/itz-shantnu097.github.io/BLUE-MAVERICKS/favicon.ico
 
-;;-- fastn.dependency: itz-shantnu097.github.io/Oswald-Typography
+-- fastn.dependency: itz-shantnu097.github.io/Oswald-Typography
 
 -- fastn.dependency: fastn-community.github.io/dark-mode-switcher
 
+-- fastn.auto-import: itz-shantnu097.github.io/Oswald-Typography
 -- fastn.auto-import: itz-shantnu097.github.io/BLUE-MAVERICKS/assets
 -- fastn.auto-import: itz-shantnu097.github.io/BLUE-MAVERICKS/components/navbar
 -- fastn.auto-import: itz-shantnu097.github.io/BLUE-MAVERICKS/components/footer
