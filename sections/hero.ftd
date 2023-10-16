@@ -48,7 +48,7 @@ color: #6c6f8a
 
 -- ftd.image:
 src: $wrapper.image
-height: fill-container
+height: hug-content
 width: hug-content
 classes: wow, fadeInRight
 
