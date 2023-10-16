@@ -1,0 +1,41 @@
+
+
+
+-- component wrapper:
+string copywrite: 
+;;ftd.type-data types: $fastn-quicksand-font.types
+
+
+;; Footer column
+-- ftd.column:
+background.solid: #010101
+height: fill-container
+width: fill-container
+border-top-width.px: 1
+border-color: rgb(30, 41, 59)
+padding-vertical.rem: 5
+padding-horizontal.rem: 2.5
+spacing.fixed.px: 20
+
+
+;; Copywrite
+-- ftd.text: $wrapper.copywrite
+color: rgb(203, 213, 225)
+role: $inherited.types.copy-small
+width: fill-container
+text-align: center
+
+;; Powered by
+-- ftd.text: Powered by `fastn` - If you can write, you can code
+color: rgb(203, 213, 225)
+role: $inherited.types.copy-small
+width: fill-container
+text-align: center
+
+
+
+-- end: ftd.column
+;; END OF FOOTER COLUMN
+
+
+-- end: wrapper

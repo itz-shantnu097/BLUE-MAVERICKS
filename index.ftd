@@ -1,43 +1,26 @@
--- import: itz-shantnu097.github.io/Challenge-07/ui-components/hero
--- import: itz-shantnu097.github.io/Challenge-07/about
--- import: itz-shantnu097.github.io/Challenge-07/certificate
--- import: itz-shantnu097.github.io/Challenge-07/gallery
--- import: itz-shantnu097.github.io/Challenge-07/resume
--- import: itz-shantnu097.github.io/Challenge-07/contact
-;;---------------------------------------------------------------------
-;;-------------------Start of Index page-------------------------
-;;---------------------------------------------------------------------
--- ftd.column:
-id: index-page
-height: hug-content
-width: fill-container
-background.solid: #221A37
+-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/sections/hero
+;;-- import: itz-shantnu097.github.io/Oswald-Typography
+;;-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/sections/features
+;;-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/sections/faqs
+;;-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/sections/contact
+-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/utils/animation
 
--- navbar.wrapper:
-logo-name: Zoro
-logo-link: https://www.fastn.com
-navlink-1: About
-link-1: /Challenge-07/about/
-navlink-2: Certificate
-link-2: /Challenge-07/certificate/
-navlink-3: Gallery
-link-3: /Challenge-07/gallery/
-navlink-4: Resume
-link-4:/Challenge-07/resume/
-navlink-5: Contact
-link-5: /Challenge-07/contact/
-theme: dark
+-- ds.page:
 
--- hero.wrapper:
-bg-image: $assets.files.images.Image.png
-title: Get the latest tech news and insights in minutes
-subtitle: Join 1000+ developers and designers who already read our weekly newsletter!!
+-- hero.wrapper: Hello I'm
+image: $assets.files.assets.hero.png
+name: Roronoa Zoro
 
--- footer.wrapper:
-copywrite: copyright @2023 ZORO
+A Professional Freelance Web Designer
 
--- end: ftd.column
-;;---------------------------------------------------------------------
-;;-------------------End of Index page-------------------------
-;;---------------------------------------------------------------------
+;;-- features.wrapper:
 
+;;-- faqs.wrapper:
+
+;;-- contact.wrapper: Want to talk with us?
+;;email: thatsmeadarshgupta@gmail.com
+;;image: $assets.files.assets.contact.webp
+
+;;We are always ready to help you. You may contact us via email. We will reply you as soon as possible.
+
+-- end: ds.page

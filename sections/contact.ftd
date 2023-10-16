@@ -1,0 +1,111 @@
+-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/components/feature-card
+
+
+-- component wrapper:
+caption title:
+optional body subtitle:
+optional string email:
+ftd.image-src image:
+
+-- ftd.container:
+id: contact
+height: fill-container
+width: fill-container
+
+-- ftd.desktop:
+
+
+-- ftd.row:
+height: fill-container
+width: fill-container
+margin-vertical.px: 50
+padding-horizontal.px: 80
+;; background.solid: #f3f4fd
+spacing.fixed.px: 100
+align-content: center
+
+
+-- ftd.column:
+classes: wow, fadeInLeft
+
+-- ftd.text: $wrapper.title
+role: $inherited.types.heading-large
+width: fill-container
+color: #4031AA
+margin-bottom.px: 36
+
+-- ftd.text: $wrapper.subtitle
+if: { $wrapper.subtitle != NULL }
+role: $inherited.types.copy-regular
+width: fill-container
+;; color: #000000
+color: $inherited.colors.text-strong
+margin-bottom.px: 36
+
+-- ftd.text: $wrapper.email
+if: { $wrapper.email != NULL }
+role: $inherited.types.copy-regular
+width: fill-container
+;; color: #000000
+margin-bottom.px: 36
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $wrapper.image
+height.fixed.px: 380
+width.fixed.px: 380
+classes: wow, fadeInRight
+
+-- end: ftd.row
+
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
+
+-- ftd.column:
+;; height: fill-container
+width: fill-container
+margin-vertical.px: 50
+padding-horizontal.px: 20
+;; background.solid: #f3f4fd
+align-content: center
+classes: wow, fadeInUp
+
+
+-- ftd.text: $wrapper.title
+role: $inherited.types.heading-large
+width: fill-container
+color: #4031AA
+margin-bottom.px: 28
+
+-- ftd.text: $wrapper.subtitle
+if: { $wrapper.subtitle != NULL }
+role: $inherited.types.copy-regular
+width: fill-container
+;; color: #000000
+color: $inherited.colors.text-strong
+margin-bottom.px: 28
+
+-- ftd.text: $wrapper.email
+if: { $wrapper.email != NULL }
+role: $inherited.types.copy-regular
+width: fill-container
+;; color: #000000
+margin-bottom.px: 28
+
+-- ftd.image:
+src: $wrapper.image
+margin-top.px: 30
+height.fixed.px: 300
+width.fixed.px: 300
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.container
+
+-- end: wrapper
