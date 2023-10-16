@@ -49,7 +49,7 @@ color: #6c6f8a
 -- ftd.image:
 src: $wrapper.image
 height: fill-container
-width: fill-container
+width: hug-content
 classes: wow, fadeInRight
 
 -- end: ftd.row
