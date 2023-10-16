@@ -8,7 +8,7 @@
 -- ds.page:
 
 -- hero.wrapper: Hello I'm
-image: $assets.files.assets.profile-img.png
+image: $assets.files.assets.hero.png
 name: Roronoa Zoro
 
 A Professional Freelance Web Designer
