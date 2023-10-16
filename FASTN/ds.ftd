@@ -38,17 +38,17 @@ z-index: -1
 title: Freelancer
 title-link: /BLUE-MAVERICKS
 navlink-1: Home
-link-1: #hero
+link-1: /
 navlink-2: About
-link-2: #about
+link-2: /
 navlink-3: Services
-link-3: features/
+link-3: /
 navlink-4: Portfolio
-link-4: #faqs
+link-4: /
 navlink-5: Pricing
-link-5: pricing/
+link-5: /
 navlink-6: Experience
-link-6: contact/
+link-6: /
 theme: light
 
 
