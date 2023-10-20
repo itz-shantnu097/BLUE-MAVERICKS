@@ -10,7 +10,7 @@ ftd.image-src image:
 boolean $isHover: false
 
 -- ftd.container:
-;; id: about
+id: about
 height: fill-container
 width: fill-container
 
@@ -27,7 +27,7 @@ height: fill-container
 width: fill-container
 ;;margin-vertical.px: 50
 ;;padding-horizontal.px: 80
-;; background.solid: #f3f4fd
+;;background.solid: #f3f4fd
 spacing.fixed.px: 100
 align-content: center
 
@@ -38,7 +38,7 @@ width.fixed.px: 380
 classes: wow, fadeInLeft
 
 -- ftd.column:
-;; spacing.fixed.px: 36
+;;spacing.fixed.px: 36
 classes: wow, fadeInRight
 
 -- ftd.text: $wrapper.title
@@ -50,7 +50,7 @@ margin-bottom.px: 36
 -- ftd.text: $wrapper.subtitle
 role: $inherited.types.copy-regular
 width: fill-container
-;; color: #000000
+;;color: #000000
 color: $inherited.colors.text-strong
 
 -- end: ftd.column
@@ -71,7 +71,7 @@ width: fill-container
 ;; color: #000000
 color: $inherited.colors.text-strong
 
-;; Button
+;;Button
 -- ftd.column:
 ;;margin-bottom.px: 20
 height: hug-content
@@ -88,10 +88,10 @@ $on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
 
 -- ftd.text: Get In Touch
 color: white
-role: $inherited.types.source-code
+role: $inherited.types.copy-regular
 
 -- end: ftd.column
-;; END OF BUTTON
+;;END OF BUTTON
 
 -- end: column
 
@@ -100,12 +100,12 @@ role: $inherited.types.source-code
 -- ftd.mobile:
 
 -- ftd.column:
-;; height: fill-container
+;;height: fill-container
 width: fill-container
 margin-vertical.px: 50
 padding-horizontal.px: 20
-;; background.solid: #f3f4fd
-;; spacing.fixed.px: 28
+;;background.solid: #f3f4fd
+;;spacing.fixed.px: 28
 align-content: center
 classes: wow, fadeInUp
 
@@ -124,7 +124,7 @@ margin-bottom.px: 28
 -- ftd.text: $wrapper.subtitle
 role: $inherited.types.copy-regular
 width: fill-container
-;; color: #000000
+;;color: #000000
 color: $inherited.colors.text-strong
 
 -- ftd.text: $wrapper.title-2
@@ -141,7 +141,7 @@ width: fill-container
 ;; color: #000000
 color: $inherited.colors.text-strong
 
-;; Button
+;;Button
 -- ftd.column:
 ;;margin-bottom.px: 20
 height: hug-content
@@ -158,10 +158,10 @@ $on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
 
 -- ftd.text: Get In Touch
 color: white
-role: $inherited.types.source-code
+role: $inherited.types.copy-regular
 
 -- end: ftd.column
-;; END OF BUTTON
+;;END OF BUTTON
 
 -- end: ftd.column
 
