@@ -14,13 +14,14 @@ width: fill-container
 -- ftd.desktop:
 
 -- ftd.row:
-height: fill-container
+height: hug-content
 width: fill-container
-;;margin-top.px: -50
+margin-top.px: 50
+margin-bottom.px: 50
 ;;padding-vertical.px: 0
 padding-horizontal.px: 80
 ;; background.solid: #f3f4fd
-;;spacing: space-between
+spacing: space-between
 align-content: center
 
 -- ftd.column:
