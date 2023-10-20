@@ -14,7 +14,7 @@ width: fill-container
 -- ftd.desktop:
 
 -- ftd.row:
-height: hug-content
+height: fill-container
 width: fill-container
 margin-top.px: 50
 margin-bottom.px: 50
