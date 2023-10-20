@@ -16,8 +16,8 @@ width: fill-container
 -- ftd.row:
 height: fill-container
 width: fill-container
-margin-top.px: -50
-padding-vertical.px: 0
+;;margin-top.px: -50
+padding-vertical.px: 50
 padding-horizontal.px: 80
 ;; background.solid: #f3f4fd
 spacing: space-between
