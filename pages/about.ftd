@@ -1,9 +1,9 @@
--- import: itz-shantnu097.github.io/BLUE-MAVERICKS/sections/about
-
+-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/sections/about-page
+-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/utils/animation
 
 -- ds.page:
 
--- about.wrapper: Who are we?
+-- about-page.wrapper: Who are we?
 image: $assets.files.assets.sitting.png
 
 We are a small team of developers who are passionate about AI and ML. We are
