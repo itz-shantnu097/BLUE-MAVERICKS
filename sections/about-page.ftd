@@ -71,20 +71,21 @@ color: $inherited.colors.text-strong
 ;;Button
 -- ftd.column:
 margin-bottom.px: 20
-height: fill-container
-;;padding-horizontal.px: 16
-;;padding-vertical.px: 8
+height: hug-content
+padding-horizontal.px: 16
+padding-vertical.px: 8
 width: hug-content
 border-radius.px: 6
-;;align-content: center
+align-content: center
 cursor: pointer
+background.solid: #d3d3d3
 ;;$on-click$: $ftd.toggle($a = $wrapper.on-click)
 background.solid if {$wrapper.isHover}: grey
 $on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
 
 -- ftd.text: Get In Touch
-color: white
+color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 
 -- end: ftd.column
@@ -139,20 +140,21 @@ color: $inherited.colors.text-strong
 ;;Button
 -- ftd.column:
 margin-bottom.px: 20
-height: fill-container
-;;padding-horizontal.px: 16
-;;padding-vertical.px: 8
+height: hug-content
+padding-horizontal.px: 16
+padding-vertical.px: 8
 width: hug-content
 border-radius.px: 6
-;;align-content: center
+align-content: center
 cursor: pointer
+background.solid: #d3d3d3
 ;;$on-click$: $ftd.toggle($a = $wrapper.on-click)
 background.solid if {$wrapper.isHover}: grey
 $on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
 
 -- ftd.text: Get In Touch
-color: white
+color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 
 -- end: ftd.column
