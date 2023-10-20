@@ -11,7 +11,7 @@ boolean $isHover: false
 
 -- ftd.container:
 ;;id: about
-height: hug-content
+height: fill-container
 width: fill-container
 
 -- ftd.desktop:
@@ -71,12 +71,12 @@ color: $inherited.colors.text-strong
 ;;Button
 -- ftd.column:
 margin-bottom.px: 20
-height: hug-content
-padding-horizontal.px: 16
-padding-vertical.px: 8
+height: fill-container
+;;padding-horizontal.px: 16
+;;padding-vertical.px: 8
 width: hug-content
 border-radius.px: 6
-align-content: center
+;;align-content: center
 cursor: pointer
 ;;$on-click$: $ftd.toggle($a = $wrapper.on-click)
 background.solid if {$wrapper.isHover}: grey
@@ -139,12 +139,12 @@ color: $inherited.colors.text-strong
 ;;Button
 -- ftd.column:
 margin-bottom.px: 20
-height: hug-content
-padding-horizontal.px: 16
-padding-vertical.px: 8
+height: fill-container
+;;padding-horizontal.px: 16
+;;padding-vertical.px: 8
 width: hug-content
 border-radius.px: 6
-align-content: center
+;;align-content: center
 cursor: pointer
 ;;$on-click$: $ftd.toggle($a = $wrapper.on-click)
 background.solid if {$wrapper.isHover}: grey
