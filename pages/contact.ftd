@@ -1,6 +1,7 @@
 -- import: itz-shantnu097.github.io/BLUE-MAVERICKS/components/navbar
 -- import: itz-shantnu097.github.io/BLUE-MAVERICKS/components/footer
 -- import: itz-shantnu097.github.io/BLUE-MAVERICKS/sections/contact-page
+-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/sections/about-page
 -- import: itz-shantnu097.github.io/BLUE-MAVERICKS/utils/animation
 -- import: fastn-community.github.io/dark-mode-switcher as dms
 
@@ -13,7 +14,7 @@
 
 -- ds.page:
 
--- ftd.text: It was a demo form so the data is not stored anywhere. If you want to contact us then you can mail us at thatsmeadarshgupta@gmail.com
+-- ftd.text: It was a demo form so the data is not stored anywhere. If you want to contact us then you can mail us at shantnufartode097@gmail.com
 if: { on-click }
 role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
