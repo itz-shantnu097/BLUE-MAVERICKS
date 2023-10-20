@@ -6,7 +6,7 @@ optional string subtitle:
 optional string title-2:
 optional string subtitle-2:
 ftd.image-src image:
-boolean $on-click:
+;;boolean $on-click:
 boolean $isHover: false
 
 -- ftd.container:
@@ -27,7 +27,6 @@ height: fill-container
 width: fill-container
 margin-vertical.px: 50
 padding-horizontal.px: 80
-;;background.solid: #f3f4fd
 spacing.fixed.px: 100
 align-content: center
 
@@ -44,13 +43,12 @@ classes: wow, fadeInRight
 -- ftd.text: $wrapper.title
 role: $inherited.types.heading-large
 width: fill-container
-color: #4031AA
+color: grey
 margin-bottom.px: 36
 
 -- ftd.text: $wrapper.subtitle
 role: $inherited.types.copy-regular
 width: fill-container
-;;color: #000000
 color: $inherited.colors.text-strong
 
 -- end: ftd.column
@@ -61,14 +59,13 @@ color: $inherited.colors.text-strong
 if: { $wrapper.title-2 != NULL }
 role: $inherited.types.heading-large
 width: fill-container
-color: #4031AA
+color: grey
 margin-bottom.px: 36
 
 -- ftd.text: $wrapper.subtitle-2
 if: { $wrapper.subtitle-2 != NULL }
 role: $inherited.types.copy-regular
 width: fill-container
-;;color: #000000
 color: $inherited.colors.text-strong
 
 ;;Button
@@ -81,7 +78,7 @@ width: hug-content
 border-radius.px: 6
 align-content: center
 cursor: pointer
-$on-click$: $ftd.toggle($a = $wrapper.on-click)
+;;$on-click$: $ftd.toggle($a = $wrapper.on-click)
 background.solid if {$wrapper.isHover}: grey
 $on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
@@ -118,27 +115,25 @@ width.fixed.px: 300
 -- ftd.text: $wrapper.title
 role: $inherited.types.heading-large
 width: fill-container
-color: #4031AA
+color: grey
 margin-bottom.px: 28
 
 -- ftd.text: $wrapper.subtitle
 role: $inherited.types.copy-regular
 width: fill-container
-;;color: #000000
 color: $inherited.colors.text-strong
 
 -- ftd.text: $wrapper.title-2
 if: { $wrapper.title-2 != NULL }
 role: $inherited.types.heading-large
 width: fill-container
-color: #4031AA
+color: grey
 margin-bottom.px: 36
 
 -- ftd.text: $wrapper.subtitle-2
 if: { $wrapper.subtitle-2 != NULL }
 role: $inherited.types.copy-regular
 width: fill-container
-;; color: #000000
 color: $inherited.colors.text-strong
 
 ;;Button
@@ -151,7 +146,7 @@ width: hug-content
 border-radius.px: 6
 align-content: center
 cursor: pointer
-$on-click$: $ftd.toggle($a = $wrapper.on-click)
+;;$on-click$: $ftd.toggle($a = $wrapper.on-click)
 background.solid if {$wrapper.isHover}: grey
 $on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
