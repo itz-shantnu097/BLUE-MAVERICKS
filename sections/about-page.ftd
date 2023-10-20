@@ -11,7 +11,7 @@ boolean $isHover: false
 
 -- ftd.container:
 ;;id: about
-height: fill-container
+height: hug-content
 width: fill-container
 
 -- ftd.desktop:
