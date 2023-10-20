@@ -10,7 +10,7 @@ ftd.image-src image:
 ;;boolean $isHover: false
 
 -- ftd.container:
-id: about
+;;id: about
 height: fill-container
 width: fill-container
 
