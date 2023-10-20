@@ -1,6 +1,7 @@
 -- import: fastn-community.github.io/dark-mode-switcher as dms
 -- import: itz-shantnu097.github.io/BLUE-MAVERICKS/components/navbar
 -- import: itz-shantnu097.github.io/BLUE-MAVERICKS/components/footer
+-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/pages/about
 -- import: itz-shantnu097.github.io/BLUE-MAVERICKS/utils/animation
 -- import: itz-shantnu097.github.io/Oswald-Typography
 
@@ -40,7 +41,7 @@ title-link: /BLUE-MAVERICKS
 navlink-1: Home
 link-1: /BLUE-MAVERICKS
 navlink-2: About
-link-2: /BLUE-MAVERICKS
+link-2: /BLUE-MAVERICKS/pages/about
 navlink-3: Services
 link-3: /BLUE-MAVERICKS
 navlink-4: Portfolio
