@@ -14,7 +14,7 @@ width: fill-container
 -- ftd.desktop:
 
 -- ftd.row:
-height.fixed.vh: 100
+height: fill-container
 width: fill-container
 margin-top.px: -50
 padding-vertical.px: 0
@@ -24,7 +24,7 @@ spacing: space-between
 align-content: center
 
 -- ftd.column:
-width.fixed.px: 600
+width: fill-container
 classes: wow, fadeInUp
 
 -- ftd.text: $wrapper.title
