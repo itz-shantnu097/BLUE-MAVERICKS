@@ -6,8 +6,8 @@ optional string subtitle:
 optional string title-2:
 optional string subtitle-2:
 ftd.image-src image:
-;;boolean $on-click:
-;;boolean $isHover: false
+boolean $on-click:
+boolean $isHover: false
 
 -- ftd.container:
 ;;id: about
@@ -25,8 +25,8 @@ padding-horizontal.px: 80
 -- ftd.row:
 height: fill-container
 width: fill-container
-;;margin-vertical.px: 50
-;;padding-horizontal.px: 80
+margin-vertical.px: 50
+padding-horizontal.px: 80
 ;;background.solid: #f3f4fd
 spacing.fixed.px: 100
 align-content: center
@@ -38,7 +38,7 @@ width.fixed.px: 380
 classes: wow, fadeInLeft
 
 -- ftd.column:
-;;spacing.fixed.px: 36
+spacing.fixed.px: 36
 classes: wow, fadeInRight
 
 -- ftd.text: $wrapper.title
@@ -58,14 +58,14 @@ color: $inherited.colors.text-strong
 -- end: ftd.row
 
 -- ftd.text: $wrapper.title-2
-;;if: { $wrapper.title-2 != NULL }
+if: { $wrapper.title-2 != NULL }
 role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
 margin-bottom.px: 36
 
 -- ftd.text: $wrapper.subtitle-2
-;;if: { $wrapper.subtitle-2 != NULL }
+if: { $wrapper.subtitle-2 != NULL }
 role: $inherited.types.copy-regular
 width: fill-container
 ;;color: #000000
@@ -73,18 +73,18 @@ color: $inherited.colors.text-strong
 
 ;;Button
 -- ftd.column:
-;;margin-bottom.px: 20
+margin-bottom.px: 20
 height: hug-content
-;;padding-horizontal.px: 16
-;;padding-vertical.px: 8
+padding-horizontal.px: 16
+padding-vertical.px: 8
 width: hug-content
 border-radius.px: 6
-;;align-content: center
+align-content: center
 cursor: pointer
-;;$on-click$: $ftd.toggle($a = $wrapper.on-click)
-;;background.solid if {$wrapper.isHover}: grey
-;;$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
-;;$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
+$on-click$: $ftd.toggle($a = $wrapper.on-click)
+background.solid if {$wrapper.isHover}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
 
 -- ftd.text: Get In Touch
 color: white
@@ -93,14 +93,14 @@ role: $inherited.types.copy-regular
 -- end: ftd.column
 ;;END OF BUTTON
 
--- end: column
+-- end: ftd.column
 
 -- end: ftd.desktop
 
 -- ftd.mobile:
 
 -- ftd.column:
-;;height: fill-container
+height: fill-container
 width: fill-container
 margin-vertical.px: 50
 padding-horizontal.px: 20
@@ -128,14 +128,14 @@ width: fill-container
 color: $inherited.colors.text-strong
 
 -- ftd.text: $wrapper.title-2
-;;if: { $wrapper.title-2 != NULL }
+if: { $wrapper.title-2 != NULL }
 role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
 margin-bottom.px: 36
 
 -- ftd.text: $wrapper.subtitle-2
-;;if: { $wrapper.subtitle-2 != NULL }
+if: { $wrapper.subtitle-2 != NULL }
 role: $inherited.types.copy-regular
 width: fill-container
 ;; color: #000000
@@ -143,18 +143,18 @@ color: $inherited.colors.text-strong
 
 ;;Button
 -- ftd.column:
-;;margin-bottom.px: 20
+margin-bottom.px: 20
 height: hug-content
-;;padding-horizontal.px: 16
-;;padding-vertical.px: 8
+padding-horizontal.px: 16
+padding-vertical.px: 8
 width: hug-content
 border-radius.px: 6
-;;align-content: center
+align-content: center
 cursor: pointer
-;;$on-click$: $ftd.toggle($a = $wrapper.on-click)
-;;background.solid if {$wrapper.isHover}: grey
-;;$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
-;;$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
+$on-click$: $ftd.toggle($a = $wrapper.on-click)
+background.solid if {$wrapper.isHover}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
 
 -- ftd.text: Get In Touch
 color: white
