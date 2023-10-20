@@ -1,6 +1,5 @@
 -- import: itz-shantnu097.github.io/BLUE-MAVERICKS/utils/animation
 
-
 -- component wrapper:
 caption title:
 string name:
@@ -23,7 +22,6 @@ padding-horizontal.px: 80
 ;; background.solid: #f3f4fd
 spacing: space-between
 align-content: center
-
 
 -- ftd.column:
 width.fixed.px: 600
@@ -48,17 +46,15 @@ color: #6c6f8a
 
 -- ftd.image:
 src: $wrapper.image
-height: hug-content
-width: hug-content
+height: fill-container
+width: fill-container
 classes: wow, fadeInRight
 
 -- end: ftd.row
 
 -- end: ftd.desktop
 
-
 -- ftd.mobile:
-
 
 -- ftd.column:
 height: fill-container
@@ -74,7 +70,6 @@ align-content: center
 -- ftd.column:
 ;; width.fixed.px: 300
 classes: wow, fadeInUp
-
 
 -- ftd.text: $wrapper.title
 role: $inherited.types.heading-large
@@ -93,17 +88,9 @@ color: #6c6f8a
 
 -- end: ftd.column
 
--- ftd.image:
-src: $wrapper.image
-height.fixed.px: 420
-width.fixed.px: 230
-classes: wow, fadeInRight
-
-
 -- end: ftd.column
 
 -- end: ftd.mobile
-
 
 -- end: ftd.container
 
