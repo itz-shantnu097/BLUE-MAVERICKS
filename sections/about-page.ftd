@@ -119,6 +119,7 @@ role: $inherited.types.heading-large
 width: fill-container
 color: grey
 margin-bottom.px: 28
+margin-top.px: 28
 
 -- ftd.text: $wrapper.subtitle
 role: $inherited.types.copy-regular
@@ -130,7 +131,8 @@ if: { $wrapper.title-2 != NULL }
 role: $inherited.types.heading-large
 width: fill-container
 color: grey
-margin-bottom.px: 36
+margin-top.px: 28
+margin-bottom.px: 28
 
 -- ftd.text: $wrapper.subtitle-2
 if: { $wrapper.subtitle-2 != NULL }
