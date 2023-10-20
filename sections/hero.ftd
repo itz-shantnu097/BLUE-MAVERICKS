@@ -20,7 +20,7 @@ width: fill-container
 ;;padding-vertical.px: 0
 padding-horizontal.px: 80
 ;; background.solid: #f3f4fd
-spacing: space-between
+;;spacing: space-between
 align-content: center
 
 -- ftd.column:
