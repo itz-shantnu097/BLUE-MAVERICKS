@@ -39,7 +39,7 @@ classes: wow, fadeInLeft
 
 -- ftd.column:
 ;; spacing.fixed.px: 36
-classes: wow, fadeInLeft
+classes: wow, fadeInRight
 
 -- ftd.text: $wrapper.title
 role: $inherited.types.heading-large
@@ -73,10 +73,10 @@ color: $inherited.colors.text-strong
 
 ;; Button
 -- ftd.column:
-margin-bottom.px: 20
+;;margin-bottom.px: 20
 height: hug-content
-padding-horizontal.px: 16
-padding-vertical.px: 8
+;;padding-horizontal.px: 16
+;;padding-vertical.px: 8
 width: hug-content
 border-radius.px: 6
 align-content: center
@@ -97,9 +97,7 @@ role: $inherited.types.source-code
 
 -- end: ftd.desktop
 
-
 -- ftd.mobile:
-
 
 -- ftd.column:
 ;; height: fill-container
@@ -145,10 +143,10 @@ color: $inherited.colors.text-strong
 
 ;; Button
 -- ftd.column:
-margin-bottom.px: 20
+;;margin-bottom.px: 20
 height: hug-content
-padding-horizontal.px: 16
-padding-vertical.px: 8
+;;padding-horizontal.px: 16
+;;padding-vertical.px: 8
 width: hug-content
 border-radius.px: 6
 align-content: center
