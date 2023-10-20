@@ -58,14 +58,14 @@ color: $inherited.colors.text-strong
 -- end: ftd.row
 
 -- ftd.text: $wrapper.title-2
-if: { $wrapper.title-2 != NULL }
+;;if: { $wrapper.title-2 != NULL }
 role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
 margin-bottom.px: 36
 
 -- ftd.text: $wrapper.subtitle-2
-if: { $wrapper.subtitle-2 != NULL }
+;;if: { $wrapper.subtitle-2 != NULL }
 role: $inherited.types.copy-regular
 width: fill-container
 ;;color: #000000
@@ -128,14 +128,14 @@ width: fill-container
 color: $inherited.colors.text-strong
 
 -- ftd.text: $wrapper.title-2
-if: { $wrapper.title-2 != NULL }
+;;if: { $wrapper.title-2 != NULL }
 role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
 margin-bottom.px: 36
 
 -- ftd.text: $wrapper.subtitle-2
-if: { $wrapper.subtitle-2 != NULL }
+;;if: { $wrapper.subtitle-2 != NULL }
 role: $inherited.types.copy-regular
 width: fill-container
 ;; color: #000000
