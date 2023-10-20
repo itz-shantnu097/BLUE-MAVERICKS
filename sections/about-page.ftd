@@ -6,7 +6,7 @@ optional string subtitle:
 optional string title-2:
 optional string subtitle-2:
 ftd.image-src image:
-boolean $on-click:
+;;boolean $on-click:
 boolean $isHover: false
 
 -- ftd.container:
@@ -81,7 +81,7 @@ width: hug-content
 border-radius.px: 6
 align-content: center
 cursor: pointer
-$on-click$: $ftd.toggle($a = $wrapper.on-click)
+;;$on-click$: $ftd.toggle($a = $wrapper.on-click)
 background.solid if {$wrapper.isHover}: grey
 $on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
@@ -92,7 +92,6 @@ role: $inherited.types.source-code
 
 -- end: ftd.column
 ;; END OF BUTTON
-
 
 -- end: column
 
@@ -147,16 +146,14 @@ color: $inherited.colors.text-strong
 ;; Button
 -- ftd.column:
 margin-bottom.px: 20
-height.fixed.px: 40
+height: hug-content
 padding-horizontal.px: 16
 padding-vertical.px: 8
-width: fill-container
-max-width.fixed.px: 600
-shadow: $text-input-shadow
+width: hug-content
 border-radius.px: 6
 align-content: center
 cursor: pointer
-$on-click$: $ftd.toggle($a = $wrapper.on-click)
+;;$on-click$: $ftd.toggle($a = $wrapper.on-click)
 background.solid if {$wrapper.isHover}: grey
 $on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
@@ -167,7 +164,6 @@ role: $inherited.types.source-code
 
 -- end: ftd.column
 ;; END OF BUTTON
-
 
 -- end: ftd.column
 
