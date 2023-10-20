@@ -17,7 +17,7 @@ width: fill-container
 -- ftd.desktop:
 
 -- ftd.column:
-height: fill-container
+height: hug-content
 width: fill-container
 margin-vertical.px: 50
 padding-horizontal.px: 80
@@ -70,6 +70,7 @@ color: $inherited.colors.text-strong
 
 ;;Button
 -- ftd.column:
+margin-top.px: 20
 margin-bottom.px: 20
 height: hug-content
 padding-horizontal.px: 16
@@ -139,6 +140,7 @@ color: $inherited.colors.text-strong
 
 ;;Button
 -- ftd.column:
+margin-top.px: 20
 margin-bottom.px: 20
 height: hug-content
 padding-horizontal.px: 16
