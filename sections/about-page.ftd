@@ -1,4 +1,5 @@
 -- import: itz-shantnu097.github.io/BLUE-MAVERICKS/utils/animation
+-- import: itz-shantnu097.github.io/BLUE-MAVERICKS/pages/contact
 
 -- component wrapper:
 caption title:
@@ -6,7 +7,6 @@ optional string subtitle:
 optional string title-2:
 optional string subtitle-2:
 ftd.image-src image:
-;;boolean $on-click:
 boolean $isHover: false
 
 -- ftd.container:
@@ -80,7 +80,6 @@ border-radius.px: 6
 align-content: center
 cursor: pointer
 background.solid: #d3d3d3
-;;$on-click$: $ftd.toggle($a = $wrapper.on-click)
 background.solid if {$wrapper.isHover}: grey
 $on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
@@ -88,6 +87,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
 -- ftd.text: Get In Touch
 color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
+link: /BLUE-MAVERICKS/pages/contact
 
 -- end: ftd.column
 ;;END OF BUTTON
@@ -150,7 +150,6 @@ border-radius.px: 6
 align-content: center
 cursor: pointer
 background.solid: #d3d3d3
-;;$on-click$: $ftd.toggle($a = $wrapper.on-click)
 background.solid if {$wrapper.isHover}: grey
 $on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
@@ -158,6 +157,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
 -- ftd.text: Get In Touch
 color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
+link: /BLUE-MAVERICKS/pages/contact
 
 -- end: ftd.column
 ;;END OF BUTTON
